@@ -12,11 +12,11 @@ public class Main {
         VendingMachine v_office = new VendingMachine("office");
 
         // String name, int quantity, double cost, int vendMachId
-        Snack s_one = new Snack("Chips", 36, 1.75, v_food.getId());
-        Snack s_two = new Snack("Chocolate Bar", 36, 1.00, v_food.getId());
-        Snack s_three = new Snack("Pretzel", 30, 2.00, v_food.getId());
-        Snack s_four = new Snack("Soda", 24, 2.50, v_drink.getId());
-        Snack s_five = new Snack("Water", 20, 2.75, v_drink.getId());
+        Snack s_one = new Snack("Chips", 36, 1.75, v_food.getId(), v_food.getName());
+        Snack s_two = new Snack("Chocolate Bar", 36, 1.00, v_food.getId(), v_food.getName());
+        Snack s_three = new Snack("Pretzel", 30, 2.00, v_food.getId(), v_food.getName());
+        Snack s_four = new Snack("Soda", 24, 2.50, v_drink.getId(), v_drink.getName());
+        Snack s_five = new Snack("Water", 20, 2.75, v_drink.getId(), v_drink.getName());
 
         // Processing
 
@@ -76,6 +76,11 @@ public class Main {
         System.out.println(s_three.getQuantity());
 
         // Stretch Goals
+        s_one.printFields();
+        s_two.printFields();
+        s_three.printFields();
+        s_four.printFields();
+        s_five.printFields();
 
         // Display each snack with
         // Name

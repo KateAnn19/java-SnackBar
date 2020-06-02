@@ -12,15 +12,17 @@ public class Snack {
     private int quantity;
     private double cost;
     private int vendMachId;
+    private String vendMachName;
 
     // constructor function
-    public Snack(String name, int quantity, double cost, int vendMachId) {
+    public Snack(String name, int quantity, double cost, int vendMachId, String vendMachName) {
         maxId++;
         id = maxId;
         this.name = name;
         this.quantity = quantity;
         this.cost = cost;
         this.vendMachId = vendMachId;
+        this.vendMachName = vendMachName;
     }
      //getters
     // get id
@@ -80,12 +82,18 @@ public class Snack {
     }
 
     public void printFields(){
-        System.out.println("*** Snack Class Fields");
-        System.out.println("FIELDS name" + this.name);
-        System.out.println("FIELDS quantity" + this.quantity);
-        System.out.println("FIELDS id" + this.id);
-        System.out.println("FIELDS vending machine id" + this.vendMachId);
-        System.out.println("FIELDS cost" + this.cost);
+        System.out.println("Snack: " + this.getName());
+        System.out.println("Name not in function: " + this.name);
+        System.out.println("Quantity not in function: " + this.quantity);
+        System.out.println("Quantity: " + this.getQuantity());
+        System.out.println("Id not in function: " + this.id);
+        System.out.println("Id " + this.getId());
+        System.out.println("Get Cost with function " + this.getCost());
+        System.out.println("Cost: " + this.cost);
+        System.out.println("Total cost: " + this.getTotalCost(this.getQuantity()));
+        System.out.println("Vending Machine Name: " + this.vendMachName);
     }
+
+    
 
 }
