@@ -83,14 +83,14 @@ public class Snack {
 
     public void printFields(){
         System.out.println("Snack: " + this.getName());
-        System.out.println("Name not in function: " + this.name);
-        System.out.println("Quantity not in function: " + this.quantity);
+        //System.out.println("Name not in function: " + this.name);
+        //System.out.println("Quantity not in function: " + this.quantity);
         System.out.println("Quantity: " + this.getQuantity());
-        System.out.println("Id not in function: " + this.id);
-        System.out.println("Id " + this.getId());
-        System.out.println("Get Cost with function " + this.getCost());
-        System.out.println("Cost: " + this.cost);
-        System.out.println("Total cost: " + this.getTotalCost(this.getQuantity()));
+        //System.out.println("Id not in function: " + this.id);
+        //System.out.println("Id " + this.getId());
+        System.out.println("Cost: " + "$" + this.getCost());
+        //System.out.println("Cost: " + this.cost);
+        System.out.println("Total cost: " + "$" + this.getTotalCost(this.getQuantity()));
         System.out.println("Vending Machine Name: " + this.vendMachName);
     }
 

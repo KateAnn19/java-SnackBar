@@ -26,7 +26,7 @@ public class Main {
         s_four.buySnack(3);
         double total = s_four.getTotalCost(3);
         c_Jane.buySnacks(total);
-        System.out.println(c_Jane.getCash());
+        System.out.println("$" + c_Jane.getCash());
         System.out.println(s_four.getQuantity());
 
         // Customer 1 (Jane) buys 1 of snack 3 (Pretzel).
@@ -35,7 +35,7 @@ public class Main {
         s_three.buySnack(1);
         double pretzTotal = s_three.getTotalCost(1);
         c_Jane.buySnacks(pretzTotal);
-        System.out.println(c_Jane.getCash());
+        System.out.println("$" + c_Jane.getCash());
         System.out.println(s_three.getQuantity());
 
         // Customer 2 (Bob) buys 2 of snack 4 (Soda).
@@ -44,13 +44,13 @@ public class Main {
         s_four.buySnack(2);
         double sodaTotal = s_four.getTotalCost(2);
         c_Babby.buySnacks(sodaTotal);
-        System.out.println(c_Babby.getCash());
+        System.out.println("$"+ c_Babby.getCash());
         System.out.println(s_four.getQuantity());
 
         // Customer 1 (Jane) finds $10.
         // Print Customer 1 (Jane) Cash on Hand.
         c_Jane.addCash(10);
-        System.out.println(c_Jane.getCash());
+        System.out.println("$" + c_Jane.getCash());
 
         // Customer 1 (Jane) buys 1 of snack 2 (Chocolate Bar).
         // Print Customer 1 (Jane) Cash on Hand.
@@ -58,7 +58,7 @@ public class Main {
         s_two.buySnack(1);
         double chocTotal = s_two.getTotalCost(1);
         c_Jane.buySnacks(chocTotal);
-        System.out.println(c_Jane.getCash());
+        System.out.println("$" + c_Jane.getCash());
         System.out.println(s_two.getQuantity());
 
         // Add 12 more items to snack 3 (Pretzel).
@@ -72,21 +72,24 @@ public class Main {
         s_three.buySnack(3);
         double totalThree = s_three.getTotalCost(3);
         c_Babby.buySnacks(totalThree);
-        System.out.println(c_Babby.getCash());
+        System.out.println("$" + c_Babby.getCash());
         System.out.println(s_three.getQuantity());
 
         // Stretch Goals
-        s_one.printFields();
-        s_two.printFields();
-        s_three.printFields();
-        s_four.printFields();
-        s_five.printFields();
-
         // Display each snack with
         // Name
         // Vending Machine Name
         // Quantity on hand
         // Total cost of all of the quantities of this snack on hand
+        s_one.printFields();
+        System.out.println("***********************");
+        s_two.printFields();
+        System.out.println("***********************");
+        s_three.printFields();
+        System.out.println("***********************");
+        s_four.printFields();
+        System.out.println("***********************");
+        s_five.printFields();
 
         // Format all dollar amount like $1,234.56
         // Starts with a dollar sign
@@ -99,23 +102,3 @@ public class Main {
     }
 }
 
-
-
-// Customer 1 cash on hand 37.75
-// Quantity of snack 4 is 21
-
-// Customer 1 cash on hand 35.75
-// Quanity of snack 3 is 29
-
-// Customer 2 cash on hand 28.14
-// Quantity of snack 4 is 19
-
-// Customer 1 cash on hand 45.75
-
-// Customer 1 cash on hand 44.75
-// Quantity of snack 2 is 35
-
-// Quantity of snack 3 is 41
-
-// customer 2 cash on hand 22.14
-// Quantity of snack 3 is 38
